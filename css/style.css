@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: #535353;
+    width: 100%;
+}
+
+header h2{
+    padding: 20px 0px;
+    color: #F9F9F9;
+    text-indent: 30px;
+    margin: 0px;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+}
+
+.products{
+    padding: 15px;
+}
+.product-items{
+    border: 1.5px solid rgba(0, 0, 0, 0.050);
+    padding: 15px;
+    display: inline-block;
+    width: 250px;
+    border-radius:5px;
+    outline: none;
+    transition: .2s ease-out;
+    margin: 10px;
+}
+.product-items:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.068),-1px -1px 5px rgba(0, 0, 0, 0.068);
+    border-color: transparent;
+}
+.product-img{
+    width:102.41px;
+    height: 104.16px;
+    transform: translateX(55%);
+}
+
+.veg{
+    height: 25px;
+    width: 25px;
+    transform: translateX(-7%);
+}
+
+.shop-title{
+    font-size: 15px;
+    color: #C4C4C4;
+}
+
+.product-title{
+    font-size: 20px;
+
+}
+
+.quantity{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.counts{
+    display: flex;
+    border: none;
+    background-color: #CEDFF8;
+    width: 145px;
+    border-radius: 40px;
+    padding: 8px;
+    justify-content: space-around;
+    font-size:20px;  
+    transition: .2s ease-out;
+}
+
+.counts:hover{
+    background-color: rgb(178, 200, 233);
+}
+
+.minus{
+    transform: translateY(-6%);
+}
+
+.minus,.add{
+    font-weight:700;
+    
+    font-size:25px;  
+    cursor: pointer;
+}
+
+.minus:active,.add:active{
+    color: white;
+}
+
+.buy{
+    display: inline-block;
+    height: auto;
+    background-color: #7BAAED;
+    margin-left: 20px;
+    width:50px; 
+    height: 45px;
+    border-radius:50%;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: rgb(98, 155, 235);
+}
+
+.buy:active,.buy:visited{
+    background-color: rgb(48, 100, 172);
+}
+
+.buy img{
+    transform: translateX(50%) translateY(36%);
+    width: 25px;
+    height: 25px;
+}
+
+.container{
+    width: 500px;
+    height: 625px;
+    
+}
+
+.items-board{
+    width: 500px;
+    height: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
+}
+
+hr{
+  width: 95%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.inline{
+    display: inline-block;
+    
+}
+
+.items-board h2{
+text-align: center;
+margin:5px 0px;
+}
+
+.quantity-product{
+    padding: 7px;
+    margin: 12px;
+    border: 1.5px solid #EDEDED;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: .2s ease-out;
+    display: none;
+    color: gray;
+}
+
+.quantity-product:hover{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.small-img{
+    float: right;    
+}
+
+.small-img img{
+    width: 70px;
+    height: 70px;
+    transform: translateX(100%);
+}
+
+#close{
+width: 25px;
+display: none;
+height:25px;
+}
+
+#close img{
+
+    float: right;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    position: absolute;
+    transform: translateY(80%) translateX(100px);
+    transition: .2s ease-out;
+
+}
+
+#close img:hover{
+    border: 1px solid rgb(245, 108, 108);
+    
+}
+
+#close img:active{
+    border: 1px solid white;
+}
+
+.about-quantity{
+    margin-top: 15px;
+    position: absolute;
+}
+
+.Quantity,.product-amount{
+    margin: 0px 20px;
+}
+
+.product-description{
+    display: flex;  
+}
+
+.product-name{
+    width: 250px;
+    font-size: 18px;
+    color: black;
+    opacity: 80%;
+}
+#submit{
+    border: 1px solid transparent;
+    background-color: #08A742;
+    height: 30px;width: 120px;
+    border-radius: 15px;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .2s ease-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+#submit:hover{
+    background-color: rgb(14, 156, 66);
+   
+}
+
+#submit:active{
+    background-color: green; 
+}
+#clear{
+    border: 1px solid transparent;
+    background-color: rgb(250, 86, 86);
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    float: right;
+    color: white;
+    
+    cursor: pointer;
+    outline: none;
+    transition: .2s ease-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+#clear:hover{
+    background-color: rgb(230, 70, 70);
+   
+}
+
+#clear:active{
+    background-color: rgb(252, 54, 40); 
+}
+
+.message{
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    transform: translateY(50%);
+    transition: .5s;
+}
+/*
+displaying the selected items on cart items board 
+*/
+
